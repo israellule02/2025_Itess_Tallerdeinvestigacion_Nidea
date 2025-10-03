@@ -12,24 +12,28 @@ import java.util.ArrayList;
  * @author israk
  */
 public class Portafolio {
-    private ArrayList logros ;
-    private Logro Logro;
+    private ArrayList<Logro> logros ;
+   
     private Alumnos alumno;
 
-    public Portafolio( Alumnos alumno, Logro Logro) {
-        this.Logro = Logro;
+    public Portafolio(ArrayList logros, Alumnos alumno) {
+        this.logros = logros;
         this.alumno = alumno;
     }
+
+    public ArrayList getLogros() {
+        return logros;
+    }
+
+    public void setLogros(ArrayList logros) {
+        this.logros = logros;
+    }
+
+    
     
     
 
-    public Logro getLogro() {
-        return Logro;
-    }
-
-    public void setLogro(Logro Logro) {
-        this.Logro = Logro;
-    }
+    
 
     public Alumnos getAlumno() {
         return alumno;
